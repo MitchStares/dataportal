@@ -9,5 +9,5 @@ class Todo(db.Model):
     time = db.Column(db.Time())
     category = db.Column(db.String(), db.ForeignKey('category.id'))
 
-def __repr__(self):
-    return '<ToDo {}>'.format(self.title)
+    def __repr__(self):
+        return '<ToDo {}>'.format(self.title)
